@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(cat\ \ background.webp);
+                background-repeat: no-repeat;
+                background-size: 1550px 1700px;
+            }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        .column1 {
+            position: absolute;
+            left: 10%;
+            top: 15%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column2 {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column3 {
+            position: absolute;
+            left: 70%;
+            top: 15%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column4 {
+            position: absolute;
+            left: 10%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .column5 {
+            position: absolute;
+            left: 40%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column6 {
+            position: absolute;
+            left: 70%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 80%;
+                display: block;
+            }
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 0 16px;
+        }
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img:hover{
+            zoom: 1.05;
+            transition: 0.2s;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column1">
+              <div class="card">
+                <img src="englishlop.jpg" alt="Jane" style="width:100%" height="217px">
+                <div class="container">
+                  <h1>&emsp;&emsp;&emsp;Coco</h1>
+                  <p><b>Breed :</b> English lop</p>
+                  <p><b>Age :</b> 2 yrs</p>
+                  <p><b>Gender :</b> Male</p>
+                  <p><b>Owner Name :</b> Angelina</p>
+                  <p><b>Price :</b> Rs. 1000</p>
+                  <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column2">
+              <div class="card">
+                <img src="lionhead.jpeg" alt="Mike" style="width:100%; height: 217px;">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Oreo</h1>
+                    <p><b>Breed :</b> Lionhead Rabbit</p>
+                    <p><b>Age :</b> 1 yrs</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Nithish</p>
+                    <p><b>Price :</b> Rs. 2000</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column3">
+              <div class="card">
+                <img src="netherland-dwarf-rabbit.jpg" alt="John" style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Bella</h1>
+                    <p><b>Breed :</b> Netherlands Dwarf Rabbit</p>
+                    <p><b>Age :</b> 7 months</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Francise</p>
+                    <p><b>Price :</b> Rs. 899</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column4">
+              <div class="card">
+                <img src="angora.jpg" alt="Jane" style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Bunny</h1>
+                    <p><b>Breed :</b> Angora Rabbit</p>
+                    <p><b>Age :</b> 9 Months</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Manikandan</p>
+                    <p><b>Price :</b> Rs. 1600</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column5">
+              <div class="card">
+                <img src="american.jpg" alt="Mike" style="width:100%; height: 217px;">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Mikey</h1>
+                    <p><b>Breed :</b> American Rabbit</p>
+                    <p><b>Age :</b> 1 yrs</p>
+                    <p><b>Gender :</b> Male</p>
+                    <p><b>Owner Name :</b> Mohan Raj</p>
+                    <p><b>Price :</b> Rs. 2000</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card">
+                <img src="dutch-rabbit.jpg" alt="John" style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Daisy</h1>
+                    <p><b>Breed :</b> Dutch Rabbit</p>
+                    <p><b>Age :</b> 2.5 yrs</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Senthil</p>
+                    <p><b>Price :</b> Rs. 1800</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

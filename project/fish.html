@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(cat\ \ background.webp);
+                background-repeat: no-repeat;
+                background-size: 1550px 1700px;
+            }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        .column1 {
+            position: absolute;
+            left: 10%;
+            top: 15%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column2 {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column3 {
+            position: absolute;
+            left: 70%;
+            top: 15%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column4 {
+            position: absolute;
+            left: 10%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .column5 {
+            position: absolute;
+            left: 40%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .column6 {
+            position: absolute;
+            left: 70%;
+            top: 100%;
+            width: 25.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 80%;
+                display: block;
+            }
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 0 16px;
+        }
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img:hover{
+            zoom: 1.05;
+            transition: 0.2s;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column1">
+              <div class="card">
+                <img src="flower.jpg"  style="width:100%" height="217px">
+                <div class="container">
+                  <h1>&emsp;&emsp;&emsp;Max</h1>
+                  <p><b>Breed :</b> Flowerhorn fish</p>
+                  <p><b>Age :</b> 2 yrs</p>
+                  <p><b>Gender :</b> Male</p>
+                  <p><b>Owner Name :</b> Rajesh</p>
+                  <p><b>Price :</b> Rs. 1000</p>
+                  <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column2">
+              <div class="card">
+                <img src="koi-care-sheet.avif"  style="width:100%; height: 217px;">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Reddy</h1>
+                    <p><b>Breed :</b>Koi fish</p>
+                    <p><b>Age :</b> 1 yrs</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Ganesh</p>
+                    <p><b>Price :</b> Rs. 900</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column3">
+              <div class="card">
+                <img src="golden fish.jpg"  style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Charlie</h1>
+                    <p><b>Breed :</b> Golden fish</p>
+                    <p><b>Age :</b> 10 months</p>
+                    <p><b>Gender :</b> Male</p>
+                    <p><b>Owner Name :</b> Vicky</p>
+                    <p><b>Price :</b> Rs. 1000</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column4">
+              <div class="card">
+                <img src="community.jpg"  style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Sofy</h1>
+                    <p><b>Breed :</b> Community fish</p>
+                    <p><b>Age :</b> 1.5 yrs</p>
+                    <p><b>Gender :</b> Female</p>
+                    <p><b>Owner Name :</b> Sunitha</p>
+                    <p><b>Price :</b> Rs. 2000</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column5">
+              <div class="card">
+                <img src="fighter.jpg"  style="width:100%; height: 217px;">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Rocky</h1>
+                    <p><b>Breed :</b> Fighter fish</p>
+                    <p><b>Age :</b> 5 months</p>
+                    <p><b>Gender :</b> Male</p>
+                    <p><b>Owner Name :</b> Kavin</p>
+                    <p><b>Price :</b> Rs. 500</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card">
+                <img src="angel.webp."  style="width:100%" height="217px">
+                <div class="container">
+                    <h1>&emsp;&emsp;&emsp;Nisha</h1>
+                    <p><b>Breed :</b> Angel fish</p>
+                    <p><b>Age :</b> 1 yrs</p>
+                    <p><b>Gender :</b> Male</p>
+                    <p><b>Owner Name :</b> Rohit</p>
+                    <p><b>Price :</b> Rs. 900</p>
+                    <p><form action="payment.html"><button class="button">Adopt</button></form></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
