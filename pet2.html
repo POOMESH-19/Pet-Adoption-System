@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Login</title>
+    <style>
+        body {
+            background-image: url(parrotback.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 650px;
+        }
+        form {
+            border-radius: 10%;
+            position: absolute;
+            top: 28%;
+            left: 55%;
+            border: 2px solid rgb(87, 101, 74);
+            padding: 10px;
+            align-items: center;
+            width: 27%;
+            height: 45%;
+            background-image: url("4.jpg");
+        }
+        .Login {
+            position: absolute;
+            font-size: 33px;
+            left: 40%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input[type=text], input[type=password] {
+            border: none;
+            background-color: white;
+            padding: 9px;
+            width: 65%;
+            position: absolute;
+            left: 17%;
+        }
+        .uname {
+            font-size: 23px;
+            position: absolute;
+            left: 17%;
+            top: 23%;
+        }
+        input[type=text] { top: 30%; }
+        .psw {
+            font-size: 23px;
+            position: absolute;
+            left: 17%;
+            top: 47%;
+        }
+        input[type=password] { top: 54%; }
+        button {
+            position: absolute;
+            left: 36%;
+            padding: 7px;
+            top: 82%;
+            font-size: 20px;
+            width: 30%;
+            background-color: rgb(27, 190, 19);
+            border-color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(9, 146, 5);
+            transition: 0.2s;
+            zoom: 1.1;
+        }
+        .first {
+            position: absolute;
+            left: 65%;
+            list-style-type: none;
+            float: right;
+        }
+        li {
+            float: left;
+            padding: 4px;
+            font-size: 20px;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+            color: white;
+        }
+        li a:hover {
+            color: rgb(245, 209, 9);
+            background: rgb(37, 37, 43);
+        }
+        .in1 {
+            color: rgb(245, 209, 9);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <nav class="first">
+            <li><a href="pet.html">Home</a></li>
+            <li><a href="pet adoption1.html">Pet's Available</a></li>
+            <li><a href="Register Pet.html">Register</a></li>
+            <li><a href="index.html" class="in1"><u>Login</u></a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </nav>
+    </ul>
+
+    <form id="loginForm">
+        <label class="Login"><b><u>Login</u></b></label>
+        <br><br>
+        <label for="uname" class="uname">Username</label>
+        <input type="text" placeholder="Enter Username" id="uname" required>
+
+        <label for="Password" class="psw">Password</label>
+        <input type="password" placeholder="Enter Password" id="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        // JavaScript for form validation
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent default form action
+
+            const username = document.getElementById("uname").value.trim();
+            const password = document.getElementById("Password").value.trim();
+
+            // Check if fields are empty
+            if (username === "" || password === "") {
+                alert("⚠️ Please fill in both username and password!");
+                return;
+            }
+
+            // Simple login credentials (example)
+            if (username === "poomesh.2005@gmail.com" && password === "1234") {
+                alert("✅ Login Successful! Redirecting...");
+                window.location.href = "adoption page.html";
+            } else {
+                alert("❌ Invalid username or password. Please try again!");
+            }
+        });
+    </script>
+</body>
+</html>

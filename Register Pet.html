@@ -1,143 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body{
-                background-image: url(33.jpg);
-                background-repeat: no-repeat;
-                background-size: 1555PX 850px;
-                background-attachment: fixed;
-            }
-            form{
-                position: absolute;
-                top: 30%;
-                left: 35%;
-                width: 27%;
-                padding: 30px;
-                background-image: url(33.jpg);
-                background-size: 1300px;
-                height: 125%;
-            }
-            label{
-                font-size: 30px;
-                font-family: 'Times New Roman', Times, serif;
-                color: azure;
-            }
-            input[type=text]{
-                padding: 8px;
-                width: 73%;
-            }
-            .padding{
-                padding: 6px;
-                width: 50%;
-                font-size: 20px;
-                font-family:cursive ;
-            }
-            button{
-                padding: 5px;
-                font-size: 20px;
-                background-color: skyblue;
-                width: 25%;
-                position: absolute;
-                left: 35%;
-                top: 94%;
-            }
-            button:hover{
-                background-color: blue;
-                transition: 0.2s;
-                zoom: 1.05;
-                color: azure;
-            }
-            .para{
-                font-size: 65px;
-                position: absolute;
-                left: 27%;
-                color: rgb(226, 227, 119);
-            }
-            .pad{
-                padding: 6px;
-            }
-            .spaceing{
-                position: absolute;
-                top: 170%;
-            }
-            .file{
-                padding: 10px;
-                color: azure;
-            }
-            .first{
+<head>
+    <style>
+        body {
+            background-image: url(33.jpg);
+            background-repeat: no-repeat;
+            background-size: 1555px 850px;
+            background-attachment: fixed;
+        }
+        form {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            width: 27%;
+            padding: 30px;
+            background-image: url(33.jpg);
+            background-size: 1300px;
+            height: 125%;
+        }
+        label {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: azure;
+        }
+        input[type=text], input[type=number], textarea, select {
+            padding: 8px;
+            width: 73%;
+            font-size: 16px;
+        }
+        .padding {
+            padding: 6px;
+            width: 50%;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        button {
+            padding: 5px;
+            font-size: 20px;
+            background-color: skyblue;
+            width: 25%;
+            position: absolute;
+            left: 35%;
+            top: 94%;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: blue;
+            transition: 0.2s;
+            zoom: 1.05;
+            color: azure;
+        }
+        .para {
+            font-size: 65px;
+            position: absolute;
+            left: 27%;
+            color: rgb(226, 227, 119);
+        }
+        .file {
+            padding: 10px;
+            color: azure;
+        }
+        .first {
             position: absolute;
             left: 65%;
             list-style-type: none;
             float: right;
         }
-        
-        li{
+        li {
             float: left;
             padding: 4px;
             font-size: 20px;
-           
         }
-        li a{
+        li a {
             display: block;
-            right: 100px;
             text-decoration: none;
-            padding: 8px;  
+            padding: 8px;
             color: white;
         }
-        li a:hover{
+        li a:hover {
             color: rgb(245, 209, 9);
             background: rgb(37, 37, 43);
         }
-        .in1{
+        .in1 {
             color: rgb(245, 209, 9);
             text-decoration: underline;
         }
+    </style>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <ul><nav class="first">
+<body>
+    <ul>
+        <nav class="first">
             <li><a href="pet.html">Home</a></li>
             <li><a href="pet adoption1.html">Pet's Available</a></li>
-            <li><a href="Register Pet.html"  class="in1">Register</a></li>
+            <li><a href="Register Pet.html" class="in1">Register</a></li>
             <li><a href="pet2.html">Login</a></li>
             <li><a href="aboutus.html">About us</a></li>
-            </nav>
-        </ul>
-        <form action="success.html">
-            <label for="name">Name :</label><br>
-            <input type="text" required><br><br>
-            <label for="mobile">Phone No :</label><br>
-            <input type="text" required><br><br>
-            <label for="address">Address :</label><br>
-            <textarea name="message" rows="5" cols="35"></textarea><br><br>
-            <label for="petcat">Pet Category :</label><br>
-            <select id="pet" name="petcat" class="padding">
-                <option value="Dog">Dog</option>
-                <option value="Cat">Cat</option>
-                <option value="Fish">Fish</option>
-                <option value="Rabbit">Rabbit</option>
-                <option value="Tortoise">Turtle</option>
-                <option value="Parrot">Parrot</option>
-              </select><br><br>
-              <label for="petname">Pet Name :</label><br>
-              <input type="text" required><br><br>
-              <label for="petbreed">Pet Breed :</label><br>
-              <input type="text" required><br><br>
-              <label for="petweight">Pet's Price :</label><br>
-              <input type="text" required> <br><br>
-              <label for="quantity">No. Of Quantity :</label><br>
-              <input type="number" required class="pad"> <br><br>
-              <label for="phott">Upload Photo :</label>
-              <input type="file" class="file" required><br>
-              <button>Submit</button><br>
-        </form>
-        <p class="para">
-            <b>Register your pet ...</b>
-        </p>
-        <p class="spaceing">
-            &emsp;&emsp13;
-        </p>
-    </body>
+        </nav>
+    </ul>
+
+    <form id="registerForm">
+        <label>Name :</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label>Phone No :</label><br>
+        <input type="text" id="phone" required><br><br>
+
+        <label>Address :</label><br>
+        <textarea id="address" rows="5" cols="35" required></textarea><br><br>
+
+        <label>Pet Category :</label><br>
+        <select id="petCategory" class="padding" required>
+            <option value="">--Select--</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Fish">Fish</option>
+            <option value="Rabbit">Rabbit</option>
+            <option value="Turtle">Turtle</option>
+            <option value="Parrot">Parrot</option>
+        </select><br><br>
+
+        <label>Pet Name :</label><br>
+        <input type="text" id="petName" required><br><br>
+
+        <label>Pet Breed :</label><br>
+        <input type="text" id="petBreed" required><br><br>
+
+        <label>Pet's Price :</label><br>
+        <input type="text" id="petPrice" required><br><br>
+
+        <label>No. Of Quantity :</label><br>
+        <input type="number" id="petQty" required class="pad"><br><br>
+
+        <label>Upload Photo :</label>
+        <input type="file" id="petPhoto" class="file" required><br>
+
+        <button type="submit">Submit</button><br>
+    </form>
+
+    <p class="para"><b>Register your pet ...</b></p>
+
+    <script>
+        // Handle form submission
+        document.getElementById("registerForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const petCategory = document.getElementById("petCategory").value;
+            const petName = document.getElementById("petName").value.trim();
+            const petBreed = document.getElementById("petBreed").value.trim();
+            const petPrice = document.getElementById("petPrice").value.trim();
+            const petQty = document.getElementById("petQty").value.trim();
+            const petPhoto = document.getElementById("petPhoto").files[0];
+
+            // Validation checks
+            if (!/^[A-Za-z ]+$/.test(name)) {
+                alert("Please enter a valid name (letters only).");
+                return;
+            }
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+            if (petPrice <= 0) {
+                alert("Price must be greater than 0.");
+                return;
+            }
+            if (petQty < 1) {
+                alert("Quantity must be at least 1.");
+                return;
+            }
+            if (!petPhoto) {
+                alert("Please upload a photo of your pet.");
+                return;
+            }
+
+            // Display success message
+            alert(`✅ Pet "${petName}" successfully registered!\n\nOwner: ${name}\nCategory: ${petCategory}\nBreed: ${petBreed}\nPrice: Rs.${petPrice}\nQuantity: ${petQty}`);
+
+            // Reset the form
+            document.getElementById("registerForm").reset();
+
+            // Redirect after 2 seconds
+            setTimeout(() => {
+                window.location.href = "success.html";
+            }, 2000);
+        });
+    </script>
+</body>
 </html>

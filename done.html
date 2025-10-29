@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Successful</title>
+    <style>
+        body {
+            background-image: url("blue.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        img {
+            position: absolute;
+            top: 20%;
+            left: 37%;
+            opacity: 0;
+            width: 300px;
+            height: 300px;
+            transition: opacity 2s ease;
+        }
+
+        p {
+            color: rgb(44, 81, 150);
+            font-size: 40px;
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        #redirect {
+            position: absolute;
+            top: 75%;
+            left: 33%;
+            color: rgb(30, 60, 120);
+            font-size: 25px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <img id="tick" src="paymenttick.gif" alt="Payment Successful">
+    <p id="message">Your Payment is Successful</p>
+    <p id="redirect">Redirecting you back to the home page...</p>
+
+    <script>
+        // Fade-in animation for success image and message
+        window.onload = function() {
+            const tick = document.getElementById("tick");
+            const message = document.getElementById("message");
+            const redirect = document.getElementById("redirect");
+
+            // Step 1: Fade in image
+            setTimeout(() => {
+                tick.style.opacity = 1;
+            }, 500);
+
+            // Step 2: Fade in message
+            setTimeout(() => {
+                message.style.opacity = 1;
+            }, 1500);
+
+            // Step 3: Show redirect notice
+            setTimeout(() => {
+                redirect.style.opacity = 1;
+            }, 3000);
+
+            // Step 4: Redirect to main page
+            setTimeout(() => {
+                window.location.href = "turtle.html"; // change to your home page name
+            }, 6000);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url(success.jpg);
+            background-repeat: no-repeat;
+            background-size: 1400px 700px;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            top: 18%;
+            left: 20%;
+            background: linear-gradient(to left,
+                rgb(254, 63, 254),
+                rgb(124, 2, 211),
+                blue,
+                rgb(0, 45, 0),
+                rgb(182, 102, 5),
+                rgb(203, 75, 6),
+                rgb(229, 1, 1));
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .countdown {
+            position: absolute;
+            top: 70%;
+            left: 35%;
+            font-size: 30px;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        &emsp;&emsp;&emsp; Your pet's <br>&ensp; &emsp;&emsp;Registration is <br> &emsp;&emsp;&emsp;successful...
+    </p>
+
+    <div class="countdown">Redirecting to Home in <span id="timer">5</span> seconds...</div>
+
+    <script>
+        // Show congratulatory message
+        window.onload = function() {
+            alert("🎉 Congratulations! Your pet has been successfully registered!");
+        };
+
+        // Countdown timer for redirect
+        let seconds = 5;
+        const timer = document.getElementById("timer");
+
+        const interval = setInterval(() => {
+            seconds--;
+            timer.textContent = seconds;
+
+            if (seconds === 0) {
+                clearInterval(interval);
+                window.location.href = "pet.html"; // Redirect to home page
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

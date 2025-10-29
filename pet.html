@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Adoption - Login</title>
+    <style>
+        body {
+            background-image: url(login\ back.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 600px;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img {
+            height: 20%;
+            width: 11%;
+            position: absolute;
+            left: 37%;
+            top: 5%;
+        }
+        .Login {
+            position: absolute;
+            font-size: 33px;
+            left: 40%;
+        }
+        input[type=text], input[type=password] {
+            border: none;
+            background-color: white;
+            padding: 9px;
+            width: 65%;
+            position: absolute;
+            left: 17%;
+        }
+        .uname {
+            font-size: 23px;
+            position: absolute;
+            left: 17%;
+            top: 23%;
+        }
+        input[type=text] { top: 30%; }
+        .psw {
+            font-size: 23px;
+            position: absolute;
+            left: 17%;
+            top: 47%;
+        }
+        input[type=password] { top: 54%; }
+        button {
+            position: absolute;
+            left: 60%;
+            padding: 7px;
+            top: 65%;
+            font-size: 20px;
+            width: 13%;
+            background-color: rgb(50, 156, 243);
+            border-color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(4, 112, 199);
+            transition: 0.2s;
+            zoom: 1.1;
+        }
+        .txt {
+            font-size: 100px;
+            position: absolute;
+            top: 12%;
+            left: 48%;
+            color: white;
+        }
+        .dot, .dot1, .dot2 {
+            font-size: 100px;
+            position: absolute;
+            top: 27%;
+        }
+        .dot { color: rgb(250, 30, 30); left: 84%; }
+        .dot1 { color: rgb(228, 153, 15); left: 86%; }
+        .dot2 { color: rgb(243, 243, 66); left: 88%; }
+        .first {
+            position: absolute;
+            left: 65%;
+            list-style-type: none;
+            float: right;
+        }
+        li {
+            float: left;
+            padding: 4px;
+            font-size: 20px;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+            color: white;
+        }
+        li a:hover {
+            color: rgb(245, 209, 9);
+            background: rgb(37, 37, 43);
+        }
+        .in1 {
+            color: rgb(245, 209, 9);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul><nav class="first">
+        <li><a href="" class="in1">Home</a></li>
+        <li><a href="pet adoption1.html">Pet's Available</a></li>
+        <li><a href="Register Pet.html">Register</a></li>
+        <li><a href="index.html">Login</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+    </nav></ul>
+
+    <form id="loginForm">
+        <label for="username" class="uname">Username</label>
+        <input type="text" id="username" placeholder="Enter Username" required>
+
+        <label for="password" class="psw">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p class="txt">
+        Re-home and <br> &emsp;adopt a pet
+        <span class="dot">.</span><span class="dot1">.</span><span class="dot2">.</span>
+    </p>
+
+    <script src="pet.js"></script>
+</body>
+</html>
